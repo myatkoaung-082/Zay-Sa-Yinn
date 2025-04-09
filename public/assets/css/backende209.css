@@ -19269,6 +19269,7 @@ fieldset[disabled] .btn {
     color: #768492;
     font-size: 14px;
     font-weight: 400;
+    border-radius: 10px;
     position: absolute;
     pointer-events: none;
     left: 12px;
@@ -19327,7 +19328,7 @@ fieldset[disabled] .btn {
   left: 6px;
   font-size: 10px;
   background: #f3f6fd;
-  padding: 1px 8px;
+  padding: 0px 8px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
@@ -19342,7 +19343,7 @@ fieldset[disabled] .btn {
     font-size: 10px;
     left: 6px;
     background: #f3f6fd;
-    padding: 5px 8px; }
+    padding: 0px 8px; }
 
 @media (min-width: 992px) {
   .lb-img {
