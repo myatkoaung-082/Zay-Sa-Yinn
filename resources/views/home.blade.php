@@ -25,11 +25,39 @@
                                </form>
                          </div>
                       </div>
-                      <a href="#" class="btn btn-primary add-btn" data-toggle="modal" data-target="#new-note"><i class="las la-plus pr-2"></i>New Folder</a>
+                      <a href="#" class="btn btn-primary add-btn" data-toggle="modal" data-target="#new-item"><i class="las la-plus pr-2"></i>Add Item</a>
                    </div>
              </div>
           </div>
     </div>
+
+    {{-- add new item model start --}}
+    <div class="modal fade" id="new-item" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="popup text-left">
+                        <h4 class="mb-4">Add New Item</h4>
+                        <div class="content create-workform">
+                            <h5 class="mb-2">Name</h5>
+                            <input type="text" class="form-control" placeholder="Notebook Name">
+                            <h5 class="mb-2">Description</h5>
+                                <textarea class="form-control" name="address" rows="5"> 
+                                </textarea>
+                            <div class="col-lg-12 mt-4">
+                                <div class="d-flex flex-wrap align-items-ceter justify-content-center">
+                                    <div class="btn btn-primary mr-4" data-dismiss="modal">Cancel</div>
+                                    <div class="btn btn-outline-primary" data-dismiss="modal">Create</div>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{-- add new item model end --}}
 
     {{-- notification section --}}
     <div class="card topnav-right">
@@ -181,7 +209,7 @@
                     <div class="col-lg-8">
                         <h1 class="text-center mb-5 fw-bold">Financial Summary</h1>
                         
-                        <div class="row g-4">
+                        <div class="row row-gap-20">
                             <!-- Total Money Card -->
                             <div class="col-md-4">
                                 <div class="card financial-card total-money h-100">
@@ -236,22 +264,30 @@
                                         Used: 100%
                                     </div>
                                 </div>
-                                <div class="d-flex justify-content-between mt-3">
-                                    <span class="badge bg-primary rounded-pill p-2">
-                                        <i class="bi bi-cash-stack me-1"></i> Total: $663,200
-                                    </span>
-                                    <span class="badge bg-warning text-dark rounded-pill p-2">
-                                        <i class="bi bi-cart-check me-1"></i> Used: $663,200
-                                    </span>
-                                    <span class="badge bg-success rounded-pill p-2">
-                                        <i class="bi bi-wallet2 me-1"></i> Current: $0
-                                    </span>
+                                <div class="d-flex flex-column mt-3">
+                                    <!-- Row 1: Total & Used (sm: side-by-side, xs: stacked) -->
+                                    <div class="d-flex justify-content-between w-100 col-gap-5">
+                                        <span class="badge bg-primary rounded-pill p-2 mb-2 mb-sm-0 me-sm-2 flex-fill text-center">
+                                            <i class="bi bi-cash-stack me-1"></i> Total: $663,200
+                                        </span>
+                                        <span class="badge bg-warning text-dark rounded-pill p-2 mb-2 mb-sm-0 flex-fill text-center">
+                                            <i class="bi bi-cart-check me-1"></i> Used: $663,200
+                                        </span>
+                                    </div>
+                                
+                                    <!-- Row 2: Current -->
+                                    <div class="d-flex justify-content-center w-100 mt-2">
+                                        <span class="badge bg-success rounded-pill p-2 text-center w-75">
+                                            <i class="bi bi-wallet2 me-1"></i> Current: $0
+                                        </span>
+                                    </div>
                                 </div>
+                                
                             </div>
                         </div>
                         
                         <!-- Action Buttons -->
-                        <div class="d-flex justify-content-center gap-3 mt-5">
+                        <div class="d-flex justify-content-center col-gap-5 mt-5">
                             <button class="btn btn-primary btn-lg px-4">
                                 <i class="bi bi-plus-circle me-2"></i>Add Funds
                             </button>

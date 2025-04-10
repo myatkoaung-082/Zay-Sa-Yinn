@@ -27,3 +27,11 @@
     font-size: 2.5rem;
     opacity: 0.8;
 }
+.row-gap-20{
+    row-gap: 20px;
+}
+
+.col-gap-5{
+    column-gap: 10px;
+}
+

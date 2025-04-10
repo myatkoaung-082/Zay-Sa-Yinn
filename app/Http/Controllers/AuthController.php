@@ -12,6 +12,7 @@ class AuthController extends Controller
 {
     //
     public function view_login(){
+        // logger('')
         return view('login');
     }
 
@@ -36,6 +37,10 @@ class AuthController extends Controller
 
     public function register(){
         return view('register');
+    }
+
+    public function unauthorized(){
+        return view('unauthorized');
     }
 
 

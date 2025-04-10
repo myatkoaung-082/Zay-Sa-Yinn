@@ -11134,16 +11134,21 @@ body.tab-horizontal .iq-footer {
   .note-detail .note-text i {
     vertical-align: text-top; }
 
-.note-details .form-control {
-  font-size: 16px;
-  line-height: 31px;
-  border: 0;
-  border-bottom: 2px solid #DCDDDF;
-  border-radius: 0;
-  padding-left: 0;
-  padding-right: 0;
-  background: none;
-  color: #768492; }
+    .note-details .form-control {
+      height: 45px;
+      line-height: 30px;
+      background: #f3f6fd;
+      padding: .375rem .75rem;
+      border: 1px solid #DCDDDF;
+      font-size: 14px;
+      color: #768492;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+      border-radius: 10px;
+      box-shadow: none;
+      }
 
 .note-details .bootstrap-select .dropdown-toggle {
   padding: .25rem .5rem;
@@ -22171,7 +22176,7 @@ i {
       margin-bottom: 15px; } }
 
 .custom-notes-space {
-  padding: 25px 30px 0 !important; }
+  padding: 25px 5px 0 !important; }
 
 .note-table .table thead th {
   border: 0;
