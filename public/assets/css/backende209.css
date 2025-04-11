@@ -15,7 +15,7 @@
   --iq-success: #8ac3a3;
   --iq-info: #87baf5;
   --iq-warning: #f0864a;
-  --iq-danger: #f674ad;
+  --iq-danger: #ff006f;
   --iq-light: #848486;
   --iq-dark: #01041b;
   --iq-purple: #AA87F5;
@@ -34,7 +34,7 @@
   --indigo: #6610f2;
   --purple: #AA87F5;
   --pink: #ffd3e2;
-  --red: #f674ad;
+  --red: #ff006f;
   --orange: #f0864a;
   --yellow: #f0864a;
   --green: #8ac3a3;
@@ -3291,7 +3291,7 @@ textarea.form-control {
 
 .badge-danger {
   color: #fff;
-  background-color: #f674ad; }
+  background-color: #ff006f; }
   a.badge-danger:hover, a.badge-danger:focus {
     color: #fff;
     background-color: #f34491; }
@@ -11135,7 +11135,7 @@ body.tab-horizontal .iq-footer {
     vertical-align: text-top; }
 
     .note-details .form-control {
-      height: 45px;
+      /* height: 45px; */
       line-height: 30px;
       background: #f3f6fd;
       padding: .375rem .75rem;
@@ -11509,7 +11509,7 @@ button.bg-danger:focus {
 
 .badge-danger {
   color: #fff;
-  background-color: #f674ad; }
+  background-color: #ff006f; }
 
 a.badge-danger:hover, a.badge-danger:focus,
 button.badge-danger:hover,

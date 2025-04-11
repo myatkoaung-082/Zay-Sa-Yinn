@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\ItemController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,8 +17,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::middleware('is_buyer')->group(function () {
     Route::get('/', function () {
-        return view('home');
-    })->name('home');
+        return view('dashboard');
+    })->name('dashboard');
+    Route::get('/buyed-items',[ItemController::class,'show_buyed_items'])->name('buyed.items');
+    Route::post('/buyer/add-item',[ItemController::class,'add'])->name('buyer.addItem');
 });
 
 // Authentication section

@@ -73,7 +73,7 @@
                     processData: false,
                     success: function(response) {
                         if (response.status == true) {
-                            window.location.href = "{{ route('home')}}";
+                            window.location.href = "{{ route('dashboard')}}";
                         } else {
 
                             // if response has message, show the message , if not empty the message, clear the error messages
